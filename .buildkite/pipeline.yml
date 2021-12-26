@@ -1,3 +1,13 @@
 steps:
   - name: ":node:"
     command: "npm install && npm test"
+  - command: ls
+    plugins:
+      - Nhattd97/kobiton-app-upload#v1.0.0:
+          app-name: 'nhatapk'
+          app-path: './test.apk'
+          app-type: 'apk'
+          kobiton-app-id: 'kobiton-store:9129'
+          kobiton-app-access: 'public'
+          kobiton-username: 'nhatkute'
+          kobiton-api-key: 'd7d228a3-71f5-4f81-b1b7-be5c815fc8ea'
